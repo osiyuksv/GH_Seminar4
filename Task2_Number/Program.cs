@@ -2,18 +2,18 @@
 // берём число А, на выход сумма числе от 1 до А
 
 Console.WriteLine("Введите число А");
-int A = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-int numA()
+Console.WriteLine(GetCountNumberA());
+
+int GetCountNumberA()
 {
-    int num = 0;
-    int B = A;
-    for (int i = 0; B > 0; i++)
+    int count = 0;
+
+    while(num > 0)
     {
-      B = B/10;
-      num = i+1;
+       count++;
+       num /= 10;
     }
-    return num;
+    return count;
 }
-numA();
-Console.WriteLine(numA());
