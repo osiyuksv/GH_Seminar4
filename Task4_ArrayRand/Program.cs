@@ -7,10 +7,7 @@ int[] RandArray()
     for (int i = 0; i < ArrayR.Length; i++)
     {
       ArrayR[i] = new Random().Next(0,2); // правое число всегда ставим +1
-      Console.Write(ArrayR[i] + " ");
     }
     return ArrayR;
 }
-
-RandArray();
-
+Console.Write(String.Join((", "), RandArray()));
