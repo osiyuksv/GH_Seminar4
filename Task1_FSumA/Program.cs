@@ -2,11 +2,17 @@
 // берём число А, на выход сумма числе от 1 до А
 
 Console.WriteLine("Введите число А");
-int num = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
+int A = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i <= num; i++)
+int SumA()
 {
-  sum = sum + i;
+    int sumA = 0;
+    for (int i = 0; i <= A; i++)
+    {
+      sumA = sumA + i;
+    }
+    return sumA;
 }
-Console.WriteLine(sum);
+
+SumA();
+Console.WriteLine(SumA());
